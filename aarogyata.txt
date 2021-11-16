@@ -59,7 +59,6 @@ speciality references doctor(speciality) constraint spec_disease not null,
 constraint disease_pk primary key(disease_id)
 );
 
-alter table hospital add constraint check_hosp_type check(type='government' or type='private');
 
 create table medicine_shop(
 med_shop_id char(6),
