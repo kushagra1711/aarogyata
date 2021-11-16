@@ -1,18 +1,18 @@
 create table adhaar(
 adhaar_no char(6),
 residence varchar(100) constraint address not null,
-email varchar(40) constriant emailid unique,
+email varchar(40) constraint emailid unique,
 name varchar(40) constraint name not null,
 dob date constraint dateofbirth not null,
-p_no char(50) constriant emailid unique,
+p_no char(50) constraint emailid unique,
 constraint adhaar_number primary key(adhaar_no)
 );
 
 create table card(
 c_id char(6),
-blood_g char(3) constriant emailid unique ,
+blood_g char(3) constraint emailid unique ,
 balance number(10),
-status char(8) constriant status_of_card not null,
+status char(8) constraint status_of_card not null,
 adhaar_no references adhaar(a_no) constraint adhaar_number unique,
 exp_date date constraint expiry not null,
 type varchar(8) constraint type_card not null,
@@ -25,29 +25,32 @@ alter table card add constraint check_med_shop_type check(type='admin' or type='
 
 create table admin(
 admin_id references card(c_id),
-department varchar(20) constriant dept not null,
-license char(6) constriant license_admin unique,
-constriant admin_pk primary key(admin)
+department varchar(20) constraint dept not null,
+license char(6) constraint license_admin unique,
+constraint admin_pk primary key(admin)
 );
 
 
 create table doctor(
 doc_id references card(c_id),
-lis_no char(5) constriant license_doc unique,
-speciality varchar(40) constriant doc_spez not null,
+fees number(5),
+lis_no char(5) constraint license_doc unique,
+speciality varchar(40) constraint doc_spez not null,
 constraint doc_pk primary key(doc_id)
 );
 
 create table hospital(
 h_id char(6),
-lis_no char(5) constriant license_hosp unique,
-name varchar(40) constriant name_hosp not null,
-h_fees number(5) hosp_fees,
+lis_no char(5) constraint license_hosp unique,
+name varchar(40) constraint name_hosp not null,
+h_fees number(5),
 type varchar(10) constraint type_hosp not null,
 constraint hosp_pk primary key(h_id)
 );
 
 //adding constraint for type which can only be private or government
+alter table hospital add constraint check_hosp_type check(type='government' or type='private');
+update hospital set h_fees=nvl(h_fees,0);
 
 create table disease(
 disease_id char(6),
