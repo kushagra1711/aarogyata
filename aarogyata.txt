@@ -1,7 +1,7 @@
 create table adhaar(
 adhaar_no char(6),
 residence varchar(100) constraint address not null,
-email varchar(40) constraint emailid unique,
+email varchar(40) constraint email_id unique,
 name varchar(40) constraint name not null,
 dob date constraint dateofbirth not null,
 p_no char(50) constraint emailid unique,
@@ -10,10 +10,10 @@ constraint adhaar_number primary key(adhaar_no)
 
 create table card(
 c_id char(6),
-blood_g char(3) constraint emailid unique ,
+blood_g char(3) constraint bloog_grp not null ,
 balance number(10),
 status char(8) constraint status_of_card not null,
-adhaar_no references adhaar(a_no) constraint adhaar_number unique,
+adhaar_no references adhaar(adhaar_no) constraint adhaar_num unique,
 exp_date date constraint expiry not null,
 type varchar(8) constraint type_card not null,
 constraint card_pk primary key(c_id)
@@ -27,7 +27,7 @@ create table admin(
 admin_id references card(c_id),
 department varchar(20) constraint dept not null,
 license char(6) constraint license_admin unique,
-constraint admin_pk primary key(admin)
+constraint admin_pk primary key(admin_id)
 );
 
 
@@ -35,7 +35,7 @@ create table doctor(
 doc_id references card(c_id),
 fees number(5),
 lis_no char(5) constraint license_doc unique,
-speciality varchar(40) constraint doc_spez not null,
+speciality varchar(40) constraint doc_spez unique,
 constraint doc_pk primary key(doc_id)
 );
 
@@ -70,7 +70,7 @@ constraint med_shop_pk primary key(med_shop_id)
 
 //adding constraint for type which can only be private or government
 
-alter table medicine_shop add constraint check_med_shop_type check(type='government' or type='private');
+alter table medicine_shop add constraint med_shop_type_check check(type='government' or type='private');
 
 create table medicine(
 med_id char(6),
@@ -128,10 +128,11 @@ constraint sells_pk primary key(h_id,doc_id)
 create table adds(
 disease_id references disease(disease_id),
 h_id references hospital(h_id),
-constraint adds_pk primary key(disease_id,doc_id)
+constraint adds_pk primary key(disease_id,h_id)
 );
 
 
+/** not created yet*/
 create table treats(
 doc_id references doctor(doc_id),
 p_id references patient(p_id),
