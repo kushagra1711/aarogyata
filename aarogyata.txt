@@ -130,7 +130,32 @@ constraint adds_pk primary key(disease_id,doc_id)
 );
 
 
+create table treats(
+doc_id references doctor(doc_id),
+p_id references patient(p_id),
+constraint treats_pk primary key(doc_id,p_id)
+);
 
+
+create table cures(
+disease_id references disease(disease_id),
+med_id references medicine(med_id),
+constraint cures_pk primary key(disease_id,med_id)
+);
+
+
+create table appnd_updt(
+admin_id references admin(admin_id),
+card_id references card(card_id),
+constraint appnd_updt_pk primary key(admin_id, card_id)
+);
+
+
+create table symptoms(
+disease_id references disease(disease_id),
+symptom varchar(20) constraint symptom_name not null,
+constraint symptom_pk primary key(disease_id)
+);
 
 
 
