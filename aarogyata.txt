@@ -177,7 +177,7 @@ constraint symptom_pk primary key(disease_id)
 );
 
 
-INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+INSERT INTO adhere VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
 INSERT INTO admin VALUES(&admin_id,&department,&license);
 INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
