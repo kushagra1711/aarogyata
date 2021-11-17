@@ -181,6 +181,7 @@ INSERT INTO medicine VALUES(&med_id,&name,&composition,&manufacturer,&price);
 insert into patient VALUES(&p_id);
 insert into works_in_hospital VALUES(&doc_id,&hosp_no);
 insert into treatment VALUES(&p_id,ongoing_treat);
+insert into health_record VALUES(&p_id,&record);
 insert into hospital_work VALUES(&doc_id,&h_id);
 insert into prescribes VALUES(&doc_id,&med_id);
 insert into sells VALUES(&med_id,&med_shop_id);
