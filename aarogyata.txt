@@ -7,6 +7,9 @@ dob date constraint dateofbirth not null,
 p_no char(50) constraint p_no_ unique,
 constraint adhaar_number primary key(adhaar_no)
 );
+//add these
+alter table adhaar add constraint email_chk check(email like '%_@__%.__%');
+alter table adhaar add constraint check_pno check(length(p_no)=10);
 
 create table card(
 c_id char(6),
@@ -22,6 +25,8 @@ constraint card_pk primary key(c_id)
 //type can only doctor paitent hospital or admin
 alter table card add constraint check_med_shop_type check(type='admin' or type='patient' or type='doctor');
 
+//add these
+alter table card add constraint check_Sttus check(status='active' or status='inactive');
 
 create table admin(
 admin_id references card(c_id),
