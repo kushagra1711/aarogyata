@@ -35,6 +35,8 @@ license char(6) constraint license_admin unique,
 constraint admin_pk primary key(admin_id)
 );
 
+//add these
+alter table admin add constraint dept_admin check(department='UIDAI' or depart='MoHFW');
 
 create table doctor(
 doc_id references card(c_id),
