@@ -170,8 +170,23 @@ constraint symptom_pk primary key(disease_id)
 );
 
 
-
-
-
-
-
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+INSERT INTO admin VALUES(&admin_id,&department,&license);
+INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
+INSERT INTO hospital VALUES(&h_id,&lis_no,&name,&h_fees,&type);
+INSERT INTO disease VALUES(&disease_id,&name,&speciality);
+INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
+INSERT INTO medicine VALUES(&med_id,&name,&composition,&manufacturer,&price);
+insert into patient VALUES(&p_id);
+insert into works_in_hospital VALUES(&doc_id,&hosp_no);
+insert into treatment VALUES(&p_id,ongoing_treat);
+insert into hospital_work VALUES(&doc_id,&h_id);
+insert into prescribes VALUES(&doc_id,&med_id);
+insert into sells VALUES(&med_id,&med_shop_id);
+insert into adds VALUES(&disease_id,&h_id);
+insert into treats VALUES(&doc_id,&p_id);
+INSERT INTO cures VALUES(&disease_id,&med_id);
+INSERT INTO appnd_updt VALUES(&admin_id,&c_id);
+INSERT INTO symptoms VALUES(&disease_id,&symptom);
+&)
