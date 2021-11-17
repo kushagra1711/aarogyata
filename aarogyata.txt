@@ -4,7 +4,7 @@ residence varchar(100) constraint address not null,
 email varchar(40) constraint email_id unique,
 name varchar(40) constraint name not null,
 dob date constraint dateofbirth not null,
-p_no char(50) constraint emailid unique,
+p_no char(50) constraint p_no_ unique,
 constraint adhaar_number primary key(adhaar_no)
 );
 
@@ -50,6 +50,8 @@ constraint hosp_pk primary key(h_id)
 
 //adding constraint for type which can only be private or government
 alter table hospital add constraint check_hosp_type check(type='government' or type='private');
+
+//last me karna hai ise
 update hospital set h_fees=nvl(h_fees,0);
 
 create table disease(
@@ -83,24 +85,31 @@ constraint med_pk primary key(med_id)
 
 
 
-/**********needs to be changed**********/
 create table patient(
-patient references card(c_id),
+p_id references card(c_id),
+constraint patient_pk primary key(p_id)
 );
 
 
 
 
+create table works_in_hospital(
+doc_id references doctor(doc_id),
+hosp_no varchar(2) constraint hosp_no_name not null,
+constraint work_in_hospital_pk primary key(doc_id)
+);
 
+create table treatment(
+p_id references patient(p_id),
+ongoing_treat varchar(25) constraint ongoing_treat_name not null,
+constraint ongoing_pk primary key(p_id)
+);
 
-
-
-
-
-
-
-
-
+create table health_record(
+p_id references patient(p_id),
+record varchar(25) constraint record_name not null,
+constraint record_pk primary key(p_id)
+);
 
 
 create table hospital_work(
@@ -121,7 +130,7 @@ constraint prescribes_pk primary key(med_id,doc_id)
 create table sells(
 med_id references medicine(med_id),
 med_shop_id references medicine_shop(med_shop_id),
-constraint sells_pk primary key(h_id,doc_id)
+constraint sells_pk primary key(med_id,med_shop_id)
 );
 
 
@@ -132,7 +141,7 @@ constraint adds_pk primary key(disease_id,h_id)
 );
 
 
-/** not created yet*/
+
 create table treats(
 doc_id references doctor(doc_id),
 p_id references patient(p_id),
@@ -149,8 +158,8 @@ constraint cures_pk primary key(disease_id,med_id)
 
 create table appnd_updt(
 admin_id references admin(admin_id),
-card_id references card(card_id),
-constraint appnd_updt_pk primary key(admin_id, card_id)
+c_id references card(c_id),
+constraint appnd_updt_pk primary key(admin_id, c_id)
 );
 
 
