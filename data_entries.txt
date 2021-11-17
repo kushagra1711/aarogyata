@@ -1,0 +1,183 @@
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'963512'
+'Bhubaneshwar'
+'mohanraj@gmail.com'
+'Mohanraj Sharma'
+TO_DATE('04-08-1992', 'DD-MM-YYYY')
+'9178234652'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'273483'
+'Katpadi'
+'coolboy@gmail.com'
+'Ramesh Chopra'
+TO_DATE('19-11-1988', 'DD-MM-YYYY')
+'8276316435'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'164276'
+'Sonagachi'
+'shreebasu563@gmail.com'
+'Shree Basu'
+TO_DATE('05-06-03', 'DD-MM-YYYY')
+'8507132039'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'024308'
+'Kolhapur'
+'khatri89@gmail.com'
+'Harihar Khatri'
+TO_DATE('09-05-1989', 'DD-MM-YYYY')
+'7234803564'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'283746'
+'Chinchwad'
+'vineeta.tandon@rediffmail.com'
+'Vineeta Tandon'
+TO_DATE('17-04-2001', 'DD-MM-YYYY')
+'9239642365'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'157435'
+'Faridabad'
+'sswaminathan@yahoo.com'
+'Supriya Swaminathan'
+TO_DATE('19-07-1995', 'DD-MM-YYYY')
+'8898823121'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'013477'
+'Ranchi'
+'msdhoni234@yahoo.com'
+'Mahendra Dhoni'
+TO_DATE('07-07-1977', 'DD-MM-YYYY')
+'7234543236'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'975436'
+'Kanpur'
+'lalikumra86@gmail.com'
+'Lalita Kumra'
+TO_DATE('31-01-1986', 'DD-MM-YYYY')
+'9761986454'
+
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+'421353'
+'Rajkot'
+'meradesmahan@hotmail.com'
+'Amol Birla'
+TO_DATE('27-09-1964', 'DD-MM-YYYY')
+'8009003267'
+
+-------------------------------------------------------------------------------
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'216352'
+'B+'
+'6000'
+'Active'
+'963512'
+TO_DATE('17-07-2022', 'DD-MM-YYYY')
+'Doctor'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'854238'
+'A+'
+'12000'
+'Inactive'
+'273483'
+TO_DATE('21-09-2025', 'DD-MM-YYYY')
+'Doctor'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'216352'
+'B-'
+'10300'
+'Active'
+'164276'
+TO_DATE('01-04-2023', 'DD-MM-YYYY')
+'Doctor'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'017642'
+'AB+'
+'16000'
+'Active'
+'024308'
+TO_DATE('20-10-2026', 'DD-MM-YYYY')
+'Patient'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'532453'
+'B+'
+'2600'
+'Active'
+'283746'
+TO_DATE('18-09-2024', 'DD-MM-YYYY')
+'Patient'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'854238'
+'AB+'
+'6600'
+'Active'
+'157435'
+TO_DATE('22-07-2025', 'DD-MM-YYYY')
+'Patient'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'019374'
+'AB-'
+'5500'
+'Inctive'
+'013477'
+TO_DATE('17-12-2022', 'DD-MM-YYYY')
+'Admin'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'024902'
+'AB+'
+'11900'
+'Active'
+'975436'
+TO_DATE('10-07-2023', 'DD-MM-YYYY')
+'Admin'
+
+INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
+'999229'
+'B+'
+'3700'
+'Active'
+'421353'
+TO_DATE('16-08-2023', 'DD-MM-YYYY')
+'Admin'
+
+--------------------------------------------------------------------------------------
+
+INSERT INTO admin VALUES(&admin_id,&department,&license);
+'019374'
+'MOHFW'
+'778884'
+
+INSERT INTO admin VALUES(&admin_id,&department,&license);
+'024902'
+'UIDAI'
+'009494'
+
+INSERT INTO admin VALUES(&admin_id,&department,&license);
+'999229'
+'MOHFW'
+'636622'
+
+---------------------------------------------------------------------------------------
+
+INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
+INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
+INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
+
+
+
+
+
+
