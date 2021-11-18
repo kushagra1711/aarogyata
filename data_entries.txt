@@ -73,7 +73,7 @@ TO_DATE('27-09-1964', 'DD-MM-YYYY')
 ---------------------------------------------------------------------------------------
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'216352'
+'016352'
 'B+'
 '6000'
 'Active'
@@ -82,7 +82,7 @@ TO_DATE('17-07-2022', 'DD-MM-YYYY')
 'Doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'854238'
+'054238'
 'A+'
 '12000'
 'Inactive'
@@ -91,7 +91,7 @@ TO_DATE('21-09-2025', 'DD-MM-YYYY')
 'Doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'435555'
+'035555'
 'B-'
 '10300'
 'Active'
@@ -100,7 +100,7 @@ TO_DATE('01-04-2023', 'DD-MM-YYYY')
 'Doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'017642'
+'917642'
 'AB+'
 '16000'
 'Active'
@@ -109,7 +109,7 @@ TO_DATE('20-10-2026', 'DD-MM-YYYY')
 'Patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'532453'
+'932453'
 'B+'
 '2600'
 'Active'
@@ -118,7 +118,7 @@ TO_DATE('18-09-2024', 'DD-MM-YYYY')
 'Patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'854238'
+'964238'
 'AB+'
 '6600'
 'Active'
@@ -127,7 +127,7 @@ TO_DATE('22-07-2025', 'DD-MM-YYYY')
 'Patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'019374'
+'119374'
 'AB-'
 '5500'
 'Inctive'
@@ -136,7 +136,7 @@ TO_DATE('17-12-2022', 'DD-MM-YYYY')
 'Admin'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'024902'
+'124902'
 'AB+'
 '11900'
 'Active'
@@ -145,7 +145,7 @@ TO_DATE('10-07-2023', 'DD-MM-YYYY')
 'Admin'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'999229'
+'199229'
 'B+'
 '3700'
 'Active'
@@ -156,36 +156,36 @@ TO_DATE('16-08-2023', 'DD-MM-YYYY')
 ---------------------------------------------------------------------------------------
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'019374'
+'119374'
 'MOHFW'
 '778884'
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'024902'
+'124902'
 'UIDAI'
 '009494'
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'999229'
+'199229'
 'MOHFW'
 '636622'
 
 ---------------------------------------------------------------------------------------
 
 INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
-'216352'
+'016352'
 '700'
 '44335'
 'neurologist'
 
 INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
-'854238'
+'054238'
 '500'
 '82821'
 'Pediatricians'
 
 INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
-'435555'
+'035555'
 '600'
 '77282'
 'Ophthalmologist'
@@ -207,7 +207,7 @@ INSERT INTO hospital VALUES(&h_id,&lis_no,&name,&h_fees,&type);
 'Private'
 
 INSERT INTO hospital VALUES(&h_id,&lis_no,&name,&h_fees,&type);
-'766464'
+'266464'
 '12203'
 'Ruby Hospital'
 '750'
@@ -233,19 +233,19 @@ INSERT INTO disease VALUES(&disease_id,&name,&speciality);
 ---------------------------------------------------------------------------------------
 
 INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
-'094193'
+'494193'
 'Star Pharma'
 'Private'
 'Delhi'
 
 INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
-'144169'
+'444169'
 'Janata Medical'
 'Government'
 'Ranchi'
 
 INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
-'196225'
+'496225'
 'The Medicine Shop'
 'Private'
 'Katpadi'
@@ -253,7 +253,7 @@ INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
 ---------------------------------------------------------------------------------------
 
 INSERT INTO medicine VALUES(&med_id,&name,&composition,&manufacturer,&price);
-'256289'
+'356289'
 'Sumatriptan'
 'Tosymra'
 'Cipla Pharmaceuticals'
@@ -267,7 +267,7 @@ INSERT INTO medicine VALUES(&med_id,&name,&composition,&manufacturer,&price);
 '225'
 
 INSERT INTO medicine VALUES(&med_id,&name,&composition,&manufacturer,&price);
-'400441'
+'300441'
 'Combiflam'
 'Paracetamol'
 'Impulse Pharma'
@@ -275,41 +275,79 @@ INSERT INTO medicine VALUES(&med_id,&name,&composition,&manufacturer,&price);
 ---------------------------------------------------------------------------------------
 
 INSERT into patient VALUES(&p_id);
-'017642'
+'917642'
 
 INSERT into patient VALUES(&p_id);
-'532453'
+'932453'
 
 INSERT into patient VALUES(&p_id);
-'854238'
+'964238'
 
 ---------------------------------------------------------------------------------------
 
 INSERT into works_in_hospital VALUES(&doc_id,&hosp_no);
-'216352'
+'016352'
 '56'
 
 INSERT into works_in_hospital VALUES(&doc_id,&hosp_no);
-'854238'
+'054238'
 '73'
 
 INSERT into works_in_hospital VALUES(&doc_id,&hosp_no);
-'435555'
+'035555'
 '14'
 
 ---------------------------------------------------------------------------------------
 
+insert into treatment VALUES(&p_id,ongoing_treat);
 
+---------------------------------------------------------------------------------------
 
+insert into health_record VALUES(&p_id,&record);
 
+---------------------------------------------------------------------------------------
 
+INSERT into hospital_work VALUES(&doc_id,&h_id);
+'016352'
+'292229'
 
+INSERT into hospital_work VALUES(&doc_id,&h_id);
+'054238'
+'232333'
 
+INSERT into hospital_work VALUES(&doc_id,&h_id);
+'035555'
+'266464'
 
+---------------------------------------------------------------------------------------
 
+INSERT into prescribes VALUES(&doc_id,&med_id);
+'016352'
+'356289'
 
+INSERT into prescribes VALUES(&doc_id,&med_id);
+'054238'
+'324361'
 
+INSERT into prescribes VALUES(&doc_id,&med_id);
+'035555'
+'300441'
 
+---------------------------------------------------------------------------------------
+
+INSERT into sells VALUES(&med_id,&med_shop_id);
+'356289'
+'494193'
+
+INSERT into sells VALUES(&med_id,&med_shop_id);
+'324361'
+'444169'
+
+INSERT into sells VALUES(&med_id,&med_shop_id);
+'300441'
+'496225'
+
+---------------------------------------------------------------------------------------
 
 
 
