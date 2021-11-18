@@ -4,7 +4,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'mohanraj@gmail.com'
 'Mohanraj Sharma'
 TO_DATE('04-08-1992', 'DD-MM-YYYY')
-'9178234650'
+'9178234652'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '273483'
@@ -12,7 +12,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'coolboy@gmail.com'
 'Ramesh Chopra'
 TO_DATE('19-11-1988', 'DD-MM-YYYY')
-'8276316431'
+'8276316435'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '164276'
@@ -28,7 +28,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'khatri89@gmail.com'
 'Harihar Khatri'
 TO_DATE('09-05-1989', 'DD-MM-YYYY')
-'7234803561'
+'7234803564'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '283746'
@@ -36,7 +36,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'vineeta.tandon@rediffmail.com'
 'Vineeta Tandon'
 TO_DATE('17-04-2001', 'DD-MM-YYYY')
-'9239642362'
+'9239642365'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '157435'
@@ -44,7 +44,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'sswaminathan@yahoo.com'
 'Supriya Swaminathan'
 TO_DATE('19-07-1995', 'DD-MM-YYYY')
-'8898823112'
+'8898823121'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '013477'
@@ -52,7 +52,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'msdhoni234@yahoo.com'
 'Mahendra Dhoni'
 TO_DATE('07-07-1977', 'DD-MM-YYYY')
-'7234543226'
+'7234543236'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '975436'
@@ -60,7 +60,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'lalikumra86@gmail.com'
 'Lalita Kumra'
 TO_DATE('31-01-1986', 'DD-MM-YYYY')
-'9761986245'
+'9761986454'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '421353'
@@ -70,10 +70,10 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 TO_DATE('27-09-1964', 'DD-MM-YYYY')
 '8009003267'
 
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'216352'
+'016352'
 'B+'
 '6000'
 'active'
@@ -82,7 +82,7 @@ TO_DATE('17-07-2022', 'DD-MM-YYYY')
 'doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'854238'
+'054238'
 'A+'
 '12000'
 'inactive'
@@ -91,7 +91,7 @@ TO_DATE('21-09-2025', 'DD-MM-YYYY')
 'doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'314567'
+'035555'
 'B-'
 '10300'
 'active'
@@ -100,7 +100,7 @@ TO_DATE('01-04-2023', 'DD-MM-YYYY')
 'doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'017642'
+'917642'
 'AB+'
 '16000'
 'active'
@@ -109,7 +109,7 @@ TO_DATE('20-10-2026', 'DD-MM-YYYY')
 'patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'532453'
+'932453'
 'B+'
 '2600'
 'active'
@@ -118,7 +118,7 @@ TO_DATE('18-09-2024', 'DD-MM-YYYY')
 'patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'226543'
+'964238'
 'AB+'
 '6600'
 'active'
@@ -127,7 +127,7 @@ TO_DATE('22-07-2025', 'DD-MM-YYYY')
 'patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'019374'
+'119374'
 'AB-'
 '5500'
 'inactive'
@@ -136,7 +136,7 @@ TO_DATE('17-12-2022', 'DD-MM-YYYY')
 'admin'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'024902'
+'124902'
 'AB+'
 '11900'
 'active'
@@ -145,7 +145,7 @@ TO_DATE('10-07-2023', 'DD-MM-YYYY')
 'admin'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'999229'
+'199229'
 'B+'
 '3700'
 'active'
@@ -153,20 +153,20 @@ INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&ty
 TO_DATE('16-08-2023', 'DD-MM-YYYY')
 'admin'
 
---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'019374'
+'119374'
 'MoHFW'
 '778884'
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'024902'
+'124902'
 'UIDAI'
 '009494'
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'999229'
+'199229'
 'MoHFW'
 '636622'
 
@@ -197,21 +197,21 @@ INSERT INTO hospital VALUES(&h_id,&lis_no,&name,&h_fees,&type);
 '50501'
 'Sarojini Hospital'
 '500'
-'Government'
+'government'
 
 INSERT INTO hospital VALUES(&h_id,&lis_no,&name,&h_fees,&type);
 '232333'
 '02012'
 'City Hospital'
 '800'
-'Private'
+'private'
 
 INSERT INTO hospital VALUES(&h_id,&lis_no,&name,&h_fees,&type);
 '266464'
 '12203'
 'Ruby Hospital'
 '750'
-'Private'
+'private'
 
 ---------------------------------------------------------------------------------------
 
@@ -235,19 +235,19 @@ INSERT INTO disease VALUES(&disease_id,&name,&speciality);
 INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
 '494193'
 'Star Pharma'
-'Private'
+'private'
 'Delhi'
 
 INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
 '444169'
 'Janata Medical'
-'Government'
+'government'
 'Ranchi'
 
 INSERT INTO medicine_shop VALUES(&med_shop_id,&name,&type,&location);
 '496225'
 'The Medicine Shop'
-'Private'
+'private'
 'Katpadi'
 
 ---------------------------------------------------------------------------------------
