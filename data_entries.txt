@@ -4,7 +4,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'mohanraj@gmail.com'
 'Mohanraj Sharma'
 TO_DATE('04-08-1992', 'DD-MM-YYYY')
-'9178234652'
+'9178234650'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '273483'
@@ -12,7 +12,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'coolboy@gmail.com'
 'Ramesh Chopra'
 TO_DATE('19-11-1988', 'DD-MM-YYYY')
-'8276316435'
+'8276316431'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '164276'
@@ -28,7 +28,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'khatri89@gmail.com'
 'Harihar Khatri'
 TO_DATE('09-05-1989', 'DD-MM-YYYY')
-'7234803564'
+'7234803561'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '283746'
@@ -36,7 +36,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'vineeta.tandon@rediffmail.com'
 'Vineeta Tandon'
 TO_DATE('17-04-2001', 'DD-MM-YYYY')
-'9239642365'
+'9239642362'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '157435'
@@ -44,7 +44,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'sswaminathan@yahoo.com'
 'Supriya Swaminathan'
 TO_DATE('19-07-1995', 'DD-MM-YYYY')
-'8898823121'
+'8898823112'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '013477'
@@ -52,7 +52,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'msdhoni234@yahoo.com'
 'Mahendra Dhoni'
 TO_DATE('07-07-1977', 'DD-MM-YYYY')
-'7234543236'
+'7234543226'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '975436'
@@ -60,7 +60,7 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 'lalikumra86@gmail.com'
 'Lalita Kumra'
 TO_DATE('31-01-1986', 'DD-MM-YYYY')
-'9761986454'
+'9761986245'
 
 INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 '421353'
@@ -70,104 +70,104 @@ INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 TO_DATE('27-09-1964', 'DD-MM-YYYY')
 '8009003267'
 
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'016352'
+'216352'
 'B+'
 '6000'
-'Active'
+'active'
 '963512'
 TO_DATE('17-07-2022', 'DD-MM-YYYY')
-'Doctor'
+'doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'054238'
+'854238'
 'A+'
 '12000'
-'Inactive'
+'inactive'
 '273483'
 TO_DATE('21-09-2025', 'DD-MM-YYYY')
-'Doctor'
+'doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'035555'
+'314567'
 'B-'
 '10300'
-'Active'
+'active'
 '164276'
 TO_DATE('01-04-2023', 'DD-MM-YYYY')
-'Doctor'
+'doctor'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'917642'
+'017642'
 'AB+'
 '16000'
-'Active'
+'active'
 '024308'
 TO_DATE('20-10-2026', 'DD-MM-YYYY')
-'Patient'
+'patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'932453'
+'532453'
 'B+'
 '2600'
-'Active'
+'active'
 '283746'
 TO_DATE('18-09-2024', 'DD-MM-YYYY')
-'Patient'
+'patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'964238'
+'226543'
 'AB+'
 '6600'
-'Active'
+'active'
 '157435'
 TO_DATE('22-07-2025', 'DD-MM-YYYY')
-'Patient'
+'patient'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'119374'
+'019374'
 'AB-'
 '5500'
-'Inctive'
+'inactive'
 '013477'
 TO_DATE('17-12-2022', 'DD-MM-YYYY')
-'Admin'
+'admin'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'124902'
+'024902'
 'AB+'
 '11900'
-'Active'
+'active'
 '975436'
 TO_DATE('10-07-2023', 'DD-MM-YYYY')
-'Admin'
+'admin'
 
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
-'199229'
+'999229'
 'B+'
 '3700'
-'Active'
+'active'
 '421353'
 TO_DATE('16-08-2023', 'DD-MM-YYYY')
-'Admin'
+'admin'
 
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'119374'
-'MOHFW'
+'019374'
+'MoHFW'
 '778884'
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'124902'
+'024902'
 'UIDAI'
 '009494'
 
 INSERT INTO admin VALUES(&admin_id,&department,&license);
-'199229'
-'MOHFW'
+'999229'
+'MoHFW'
 '636622'
 
 ---------------------------------------------------------------------------------------
