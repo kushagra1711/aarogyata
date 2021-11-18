@@ -23,7 +23,7 @@ constraint card_pk primary key(c_id)
 );
 
 //type can only doctor paitent hospital or admin
-alter table card add constraint check_med_shop_type check(type='admin' or type='patient' or type='doctor');
+alter table card add constraint check_card_type check(type='admin' or type='patient' or type='doctor');
 
 //add these
 alter table card add constraint check_Sttus check(status='active' or status='inactive');
@@ -108,7 +108,7 @@ constraint work_in_hospital_pk primary key(doc_id)
 
 create table treatment(
 p_id references patient(p_id),
-ongoing_treat varchar(25) constraint ongoing_treat_name not null,
+ongoing_treat references disease(name) constraint ongoing_treat_name not null,
 constraint ongoing_pk primary key(p_id)
 );
 
@@ -177,7 +177,7 @@ constraint symptom_pk primary key(disease_id)
 );
 
 
-INSERT INTO adhere VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
+INSERT INTO adhaar VALUES(&adhaar_no,&residence,&email,&name,&dob,&p_no);
 INSERT INTO card VALUES(&c_id,&blood_g,&balance,&status,&adhaar_no,&exp_date,&type);
 INSERT INTO admin VALUES(&admin_id,&department,&license);
 INSERT INTO doctor VALUES(&doc_id,&fees,&lis_no,&speciality);
@@ -198,3 +198,24 @@ INSERT INTO cures VALUES(&disease_id,&med_id);
 INSERT INTO appnd_updt VALUES(&admin_id,&c_id);
 INSERT INTO symptoms VALUES(&disease_id,&symptom);
 &)
+
+ADHAAR (ADHAAR_NO, RESIDENCE , EMAIL, NAME, DOB, P_NO)
+CARD (C_ID, BLOOD_G, BALANCE, STATUS, ADHAAR_NO, EXP_DATE, TYPE)
+ADMIN (ADMIN_ID, DEPARTMENT, LICENSE)
+DOCTOR (DOC_ID, FEES, LCENSE_NO, SPECIALITY)
+HOSPITAL (H_ID, LICENSE_NO, NAME, H_FEES, TYPE)
+DISEASE (DISEASE_ID, NAME, SPECAILITY)
+MEDICINE_SHOP (MED_SHOP_ID, NAME, TYPE, LOCATION)
+MEDICINE (MED_ID, NAME, COMPOSITION, MANUFACTURER, PRICE)
+PATIENT (P_ID)
+WORKS_IN_HOSPITAL (DOC_ID,HOSP_NO)
+TREATMENT (P_ID,ONGOING_TREATMENT)
+HEALTH_RECORD (P_ID, RECORD)
+HOSPITAL_WORK (DOC_ID, H_ID)
+PRESCRIBES (DOC_ID, MED_ID)
+SELLS (MED_ID, MED_SHOP_ID)
+ADDS (DISEASE_ID, H_ID)
+TREATS (DOC_ID, P_ID)
+CURES (DISEASE_ID, MED_ID)
+APPND_UPDT (ADMIN_ID, C_ID)
+SYMPTOMS (DISEASE_ID, SYMPTOM)
